@@ -42,5 +42,5 @@ jobs:
       - name: deploying on surge
         run: surge .//build http://my-app-1st.surge.sh/ --token "8db529d0210b49cc827e3d2f4ad10d06"
     
-        |
+        
           
