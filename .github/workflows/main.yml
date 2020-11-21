@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: no change
+name: automatic deployment
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -40,7 +40,7 @@ jobs:
         run: npm install -g surge
       
       - name: deploying on surge
-        run: surge .//build http://my-app-1st.surge.sh/ --token "8db529d0210b49cc827e3d2f4ad10d06"
+        run: surge .//build http://my-app-1st.surge.sh/ --token  ${{ secrets.OPEN }}
     
         
           
